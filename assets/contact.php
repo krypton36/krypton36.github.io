@@ -6,7 +6,7 @@ if ( !defined( "PHP_EOL" ) ) define( "PHP_EOL", "\r\n" );
 
 //// Place your e-mail here
 
-$address = "ivanvilla87@gmail.com";
+$address = "6199138271@vtext.com";
 
 
 //// Don't edit :)
@@ -25,12 +25,14 @@ $session_verify = !empty($_SESSION['sand']['ajax-contact']['verify']) ? $_SESSIO
 $error = '';
 
 
+date_default_timezone_set('Etc/UTC');
+require 'PHPMailer/class.phpmailer.php';
 
 //// Process for validation
 
 //// Name validation
 if ( empty( $name ) ) {
-	$error .= '<li>Your name is required.</li>';
+	$error .= '';
 }
 
 //// Subject validation
@@ -78,10 +80,21 @@ $msg = wordwrap( $msg, 70 );
 $headers  = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
 
-
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Host       = 'smtp.gmail.com';
+$mail->Port       = 587;
+$mail->SMTPAuth   = true;
+$mail->Password   = "Ivan80587";
+$mail->SetFrom('kkrypton36@gmail.com', 'Josh Website');
+$mail->AddAddress('6199138271@vzwpix.com' , 'Joshua Villasenor');
+$mail->Subject = $e_subject;
+$mail->MsgHTML($msg);
+$mail->AltBody = $msg;
+$mail->addCustomHeader($headers);
 //// If message success, sent succesfully
 
-if ( mail( $address, $e_subject, $msg, $headers ) ) {
+if ( $mail->Send() ) {
 
 	echo "<fieldset>";
 	echo "<div class='successPage'>";
