@@ -2,7 +2,7 @@
  * Mini Onepage Personal Portfolio Template
  * © scrils
 */
-/* ========TABLE OF CONTENTS========== 
+/* ========TABLE OF CONTENTS==========
 01. NAVIGATION MENU
 02. SECTION INTRO
 03. SECTION ABOUT
@@ -78,7 +78,7 @@ a:hover{
   position: absolute;
   top: 0;
   left: 0;
-  
+
   -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
   animation: sk-bounce 2.0s infinite ease-in-out;
 }
@@ -94,10 +94,10 @@ a:hover{
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
+  0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% { 
+  } 50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
@@ -113,9 +113,9 @@ a:hover{
   	width: 100%;
   	height: auto;
   	min-height: 60px;
-  	-webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-  	-moz-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-  	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  	-webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84);
+  	-moz-transition: 0.2s cubic-bezier(.58,.83,.57,.84);
+  	transition: 0.2s cubic-bezier(.58,.83,.57,.84);
   	position: fixed;
   	top: 0px;
 }
@@ -195,8 +195,15 @@ a:hover{
 	padding-top:250px;
 	padding-bottom: 44px;
 }
-
-.hi h1 {
+.hi bh {
+	letter-spacing: 2px;
+	font-size: 150px;
+	font-weight: 700;
+	color: #000066;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 15px;
+}
+.hi yh {
 	letter-spacing: 2px;
 	font-size: 150px;
 	font-weight: 700;
@@ -387,13 +394,13 @@ a:hover{
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-transform: uppercase;
-	color:#777;	
+	color:#777;
 }
 .resume-right p{
 	font-size: 16px;
 	line-height: 32px;
 	font-family: "Lora", serif;
-	color:#222;	
+	color:#222;
 }
 
 /*--------------------------------------------------
@@ -420,7 +427,7 @@ a:hover{
 	padding-left: 0;
 	text-align: center;
 }
-.is-checked{ 
+.is-checked{
 	color: #ffd504 !important;
 	border-bottom: 1px solid #ffd504;
 }
@@ -456,8 +463,8 @@ a:hover{
 	width: 100%;
 	height: 100%;
 	padding-right:20px;
-	background: rgba(0,0,0,0.6); 
-	opacity: 0; 
+	background: rgba(0,0,0,0.6);
+	opacity: 0;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -547,7 +554,7 @@ a:hover{
 
 #sectionClients{
 	background: #f7f7f7;
-	padding: 100px 0px;	
+	padding: 100px 0px;
 }
 #sectionClients .sectionTitle{
 	margin-bottom: 90px;
@@ -606,7 +613,7 @@ a:hover{
 	color:#000;
 	font-size: 26px;
 	font-weight: 700;
-	letter-spacing: 1px;	
+	letter-spacing: 1px;
 }
 .journal-text h2{
 	text-transform: uppercase;
@@ -614,7 +621,7 @@ a:hover{
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	color: #888;	
+	color: #888;
 }
 .journal-image{
 	position: relative;
@@ -743,11 +750,11 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 /* ====MESSAGE FOR SUCCES==== */
 
-#message { 
-	margin: 1em 0; 
-	padding: 0; 
-	display: block; 
-	background: transparent none; 
+#message {
+	margin: 1em 0;
+	padding: 0;
+	display: block;
+	background: transparent none;
 }
 #message h1 {
   	letter-spacing: 1px;
@@ -764,14 +771,14 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 /* ====MESSAGE FOR ERROR==== */
-.errorMessage { 
+.errorMessage {
   	display: block;
   	font-size: 14px;
     padding: 20px 0 0 0;
 }
 
 ul.errorMessages { padding: 10px 0 0 0; }
-ul.errorMessages li { 
+ul.errorMessages li {
   	font-size: 16px;
   	font-weight: 200;
   	text-align: left;
@@ -945,6 +952,14 @@ body{
 .sectionTitle h1{
 	font-size: 30px;
 }
+.centerImgae{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+    height: 40px;
+}
+
 .skills{
 	padding-left: 0px;
 }
